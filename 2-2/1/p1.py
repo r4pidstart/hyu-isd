@@ -1,0 +1,5 @@
+print('Number of cars: ')
+car=input()
+print('Number of buses:')
+bus=input()
+print('Number of vehicles:',(int(car)+int(bus)))

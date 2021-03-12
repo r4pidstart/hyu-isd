@@ -1,0 +1,12 @@
+print("x:")
+x=input()
+print("*a:")
+a=input()
+print("/b:")
+b=input()
+print("+c:")
+c=input()
+print("-d:")
+d=input()
+
+print(x, '*', a, '/', b, '+', c, '-', d, '=', (int(x)*int(a)/int(b)+int(c)-int(d)))
