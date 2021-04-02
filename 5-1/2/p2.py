@@ -8,4 +8,4 @@ for x in range (100):
     if(biggest_number<num[x]):
         biggest_number=num[x]
 
-print('\n'+"max value:", biggest_number)
+print('\n\n'+"max value:", biggest_number)

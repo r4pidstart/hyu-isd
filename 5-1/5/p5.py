@@ -14,6 +14,10 @@ print("Generaged Cheese is '"+cheese+"'")
 print()
 
 for x in range (10):
+    if(cheese=='_'*len(cheese)):
+        print("Out of cheese!")
+        exit()
+
     char=chr(random.randint(97,122))
     while(char in eaten):
         char=chr(random.randint(97,122))
@@ -28,3 +32,8 @@ for x in range (10):
             cheese=cheese[0:x]+'_'+cheese[x+1:len(cheese)]
     print("Current cheese status:", cheese)
     print()
+
+print("Finally remained cheese status :")
+print("Eaten alphabet of cheese : "+eaten)
+print("Original cheese : "+original)
+print("Current cheese status : "+cheese)
