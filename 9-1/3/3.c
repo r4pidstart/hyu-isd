@@ -1,7 +1,5 @@
 #include<stdio.h>
 
-int gMul=1;
-
 int sum(int n)
 {
     static int res=0;
