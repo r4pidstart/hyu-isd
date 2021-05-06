@@ -32,5 +32,6 @@
             "preLaunchTask": "C/C++: gcc-9 build active file",
             "miDebuggerPath": "/usr/bin/gdb"
         }
+
     ]
 }
