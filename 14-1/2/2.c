@@ -19,4 +19,6 @@ int main()
         mi=min(mi, *(arr+i)), ma=max(ma, *(arr+i));
 
     printf("min: %d\nmax: %d", mi, ma);
+    
+    free(arr);
 }
