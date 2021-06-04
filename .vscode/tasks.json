@@ -28,9 +28,9 @@
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}",
                 "-lm",
-                "-lstdc++",
-                "-fsanitize=address",
-                "-O1"
+                "-lstdc++"
+                // ,"-fsanitize=address",
+                // "-O1"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
