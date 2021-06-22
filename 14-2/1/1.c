@@ -30,6 +30,7 @@ int main(void)
     while(strcmp(tmp1, "END")!=0 && tmp2!=0)
     {
         Person* tmp=realloc(arr, sizeof(Person)*(++arr_size));
+        arr=tmp;
         strcpy(arr[arr_size-1].name, tmp1);
         arr[arr_size-1].score=tmp2;
         scanf("%s%d", tmp1, &tmp2);

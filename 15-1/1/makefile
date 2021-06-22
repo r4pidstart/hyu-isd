@@ -1,7 +1,7 @@
 program : add.o main.o
 	gcc -o program add.o main.o
 
-a.o : add.c
+add.o : add.c
 	gcc -c -o add.o add.c
 
 main.o : main.c

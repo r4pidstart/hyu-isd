@@ -1,21 +1,17 @@
 
 #include<stdio.h>
 
-void printAllString(const char **str)
+void printstring(const char* s)
 {
-    printf("%s\n%s\n%s", *str, *(str+1), *(str+2));
-}
-
-void printString(const char *str)
-{
-    printf("%s\n", str);
+    printf("%s\n", s);
 }
 
 int main(void)
 {
-    const char *s[3]={"One", "Two", "Three"};
+    char* start[3];
+    start[0]="One", start[1]="Two", start[2]="Three";
 
-    printString(*s);
-    printString(*(s+1));
-    printString(*(s+2));
+    void (*fp)(const char*)=printstring;
+    for(int i=0; i<3; i++)
+        fp(start[i]);
 }
